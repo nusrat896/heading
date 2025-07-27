@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Media in HTML </title>
+        <title>form in html</title>
     </head>
     <body>
-        <h1>the image</h1>
-        <img src="https://images.squarespace-cdn.com/content/v1/5b061f0e0dbda31446baccc0/1527893082224-1QNG73UB18IXT2MF3XNV/image-asset.jpeg?format=2500w" alt="lion"
-        style="width: 280px;height: 300px;">
-        <h1> the audio</h1>
-        <audio controls>
-            <source src="sound.mp3" type="audio/mpeg">
-            your browser does not support the audio element 
-        </audio>
-        <h2>the video</h2>
-        <video width="300" height="150" controls >
-            <source src="video.mp4" type="video/mp4">
-Your browser does not support the video tag
-        </video>
+        <h3>This is a form</h3>
+        <form>
+            <fieldset>
+                <legend>Registration Form</legend>
+                <label>Name:</label><input type="text" id="Name"><br>
+                <label>Father Name:</label><input type="text" id="Father Name"><br>
+                <label>Mother Name:</label><input type="text" id="Mother Name"><br>
+                <label>Age :</label><input type="text" id="Age"><br>
+                <label>Email:</label><input type="text" id="email"><br>
+                <label>Contact Number:</label><input type="password" id="contact"><br>
+                <label>Gender:</label><br><input type="radio" id="Female" >Female<br>
+                <input type="radio" id="Male" >Male<br>
+                <input type="radio" id="Others">Others<br>
+                <label>Hobby :</label><input type="text" id="hobby"><br>
+                <label>Submit :</label><input type="button" value="Submit">
+            </fieldset>
+        </form>
     </body>
 </html>
