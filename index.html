@@ -1,18 +1,39 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Background Effect</title>
-<style>
-    body{
-        background-color: aquamarine;
-        background-image: url(doll.jpg);
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: top right;
-        background-size: 400px;
-    }
-</style>
-    </head>
-    <body>Hello World</body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Background Effect</title>
+  <style>
+@keyframes mymoves{
+    0%{background-image: url(image.avif);}
+    25%{background-image: url(images.jpeg);}
+    50%{background-image: url(images\ \(1\).jpeg);}
+    75%{background-image: url(image\ 2.jpg);}
+    100%{background-image: url(pic.jpg);}
+
+}
+div{
+    height: 500px;
+    width: 700px;
+    background-color: blue;
+    background-size: cover;
+    background-position:center ;
+    background-repeat: no-repeat;
+    animation-name: mymoves;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+
+}
     
+  </style>
+
+</head>
+
+<body>
+    <div></div>
+  
+</body>
+
 </html>
