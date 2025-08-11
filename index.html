@@ -1,39 +1,19 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Background Effect</title>
-  <style>
-@keyframes mymoves{
-    0%{background-image: url(image.avif);}
-    25%{background-image: url(images.jpeg);}
-    50%{background-image: url(images\ \(1\).jpeg);}
-    75%{background-image: url(image\ 2.jpg);}
-    100%{background-image: url(pic.jpg);}
-
-}
-div{
-    height: 500px;
-    width: 700px;
-    background-color: blue;
-    background-size: cover;
-    background-position:center ;
-    background-repeat: no-repeat;
-    animation-name: mymoves;
-    animation-duration: 7s;
-    animation-iteration-count: infinite;
-
-}
-    
-  </style>
-
-</head>
-
-<body>
-    <div></div>
-  
-</body>
-
+    <head>
+        <title>Transform</title>
+        <style>
+            div{
+                height: 400px;
+                width: 300px;
+                background-color: blue;
+                border:2 px solid black;
+                transform: rotateX(180deg);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Welcome To Codingal</h1>
+        <div>Codingal</div>
+    </body>
 </html>
