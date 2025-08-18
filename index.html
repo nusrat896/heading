@@ -1,19 +1,104 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Transform</title>
-        <style>
-            div{
-                height: 400px;
-                width: 300px;
-                background-color: blue;
-                border:2 px solid black;
-                transform: rotateX(180deg);
-            }
-        </style>
-    </head>
-    <body>
-        <h1>Welcome To Codingal</h1>
-        <div>Codingal</div>
-    </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Positioning Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    .box {
+      width: 150px;
+      height: 100px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    /* Static */
+    .static {
+      background: #3498db;
+      position: static; /* Default */
+    }
+
+    /* Relative */
+    .relative {
+      background: #e67e22;
+      position: relative;
+      left: 30px;
+      top: 20px;
+    }
+
+    /* Absolute */
+    .container {
+      position: relative;
+      height: 200px;
+      border: 2px dashed #999;
+      margin-bottom: 20px;
+    }
+
+    .absolute {
+      background: #9b59b6;
+      position: absolute;
+      right: 10px;
+      bottom: 10px;
+    }
+
+    /* Fixed */
+    .fixed {
+      background: #27ae60;
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      z-index: 1000;
+    }
+
+    /* Sticky */
+    .sticky {
+      background: #c0392b;
+      position: sticky;
+      top: 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS Positioning Demo</h1>
+
+  <div class="box static">Static</div>
+  <div class="box relative">Relative</div>
+
+  <div class="container">
+    <div class="box absolute">Absolute</div>
+    <p>This is a container with <code>position: relative</code>. 
+       The purple box is <code>absolute</code> inside it.</p>
+  </div>
+
+  <div class="box sticky">Sticky (scroll down)</div>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse potenti. 
+     Curabitur at lectus vel erat fringilla faucibus. Donec venenatis tellus id 
+     metus pharetra, vitae laoreet nunc viverra. Integer fringilla lectus sit amet 
+     dui tincidunt, vel vulputate ipsum pharetra. A lot of text here to enable scrolling.</p>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse potenti. 
+     Curabitur at lectus vel erat fringilla faucibus. Donec venenatis tellus id 
+     metus pharetra, vitae laoreet nunc viverra.</p>
+
+  <div class="box fixed">Fixed</div>
+
+</body>
 </html>
